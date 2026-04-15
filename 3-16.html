@@ -2,20 +2,48 @@
 <html>
     <head>
         <meta charset="utf-8">
-        <title>시간 정보를 입력 응용</title>        
+        <title>설문지</title>        
     </head>
     <body>
-        <h3>생일 축하 합니다 </h3>
-         <hr>당신의 생일은 20003년 2월9일 입니다. 틀리면 수정하시고 파티 시간과 장소를 입력하세요<hr>
-        <form>
-            <table>
-                <tr><td>생일</td>
-                    <td><input type="date"value="2003-02-09"></td></tr>
-                    <tr><td>생일파티시간</td></tr>
-                    <td><input type="time"></td></tr>
-                    <tr><td>생일파티장소</td></tr>
-                    <td><input type="text"></td></tr>
-            </table>
-        </form>
+      <header> <h3>소프트웨어 기술에 대한 의견을 듣습니다. 많은 참여 부탁드립니다.</h3>
+        <hr>
+        </header> 
+        <section> <form>
+            <field set>
+                <legend>
+                     <label>
+                            학년 <input type="radio" name="학년"value="1학년">
+                         <input type="radio" name="학년"value="2학년">
+                         <input type="radio" name="학년"value="3학년">
+                    </label>
+                    <label>
+                       성별  <input type="radio" name="성별"value="남">
+                     <input type="radio" name="성별"value="여">
+                    </label>
+                    <label>
+                        관심분야 <select name="interest">
+                            <option value="1"> ai 인공지능</option>
+                            <option value="2">모바일 소프트웨어</option>
+                            <option value="3">게임</option>
+                            <option value="4">비주얼 스튜디오 코드</option>
+                        </select>
+                    </label>
+                    <label>
+                        진로  <input type="checkbox" nvalue="개발">
+                        <input type="checkbox" nvalue="기획">
+                        <input type="checkbox" nvalue="영업">
+                        <input type="checkbox" nvalue="창업">
+                        남기고 싶은 말 <textarea cols="40"rows="7">
+                            글을 남겨주세요.
+                        </textarea>
+                    </label>
+                    
+                </legend>
+                
+            </field> 
+        </section>
+        <footer>
+             <p> Copyright 2026 by MYONGI COLLEGE</p>
+          </footer>
     </body>
 </html>
